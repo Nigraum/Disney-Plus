@@ -1,7 +1,7 @@
-@import url(./app.css)
-@import url(./header.css)
-@import url(./movie.css)
-@import url(./movies.css)
+@import url(./app.css);
+@import url(./header.css);
+@import url(./movie.css);
+@import url(./movies.css);
 
 * {
     margin: 0;
