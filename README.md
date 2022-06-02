@@ -27,5 +27,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [x] Uso semântico do HTML
 - [x] Integração com a API do TMDB ao usar o `fetch`
 - [x] Criação de elementos dinamicos com o uso do `createElement`
+- [ ] Responsividade da aplicação com `@media`
 - [x] Estrutura de variavei globais
 - [x] Uso de variáveis globais no `:root`
