@@ -1,59 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/style.css">
-        <title>Disney Plus</title>
-    </head>
-    <body>
-        <div id="app">
-            <header>
-                <img src="./assets/logo.png" alt="Logo Disney">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <button type="button" class="button_menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </header>
+    <title>Disney Plus</title>
+    <meta name="description" content="Plataforma do disney plus" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img src="/assets/logo.png" alt="Logo disney plus" />
 
-            <main>
-                <section class="movie">
-                    <div class="rate">
-                        <img src="./assets/logo-imdb.png" alt="Logo IMDB">
-                        <strong></strong>
-                    </div>
+        <button type="button" class="button_menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
 
-                    <!-- Data de lançamento -->
-                    <span></span>
+      <main>
+        <section class="movie">
+          <div class="rate">
+            <img src="/assets/logo-imdb.png" alt="Logo IMDB" />
+            <strong></strong>
+          </div>
 
-                    <!-- Titulo do filme -->
-                    <h1></h1>
+          <!-- DATA DE LANÇAMENTO -->
+          <span></span>
+          <!-- TITULO -->
+          <h1></h1>
+          <!-- SINOPSE -->
+          <p></p>
 
-                    <!-- sinopse -->
-                    <p></p>
+          <button>
+            <img src="./assets/icon-play.png" alt="Icon play">
+            Watch Now
+          </button>
+        </section>
 
-                    <button>
-                        <img src="./assets/icon-play.png" alt="Icon play">
-                        Watch Now
-                    </button>
-                </section>
+        <aside class="movies">
+          <h2>Movies</h2>
 
-                <aside class="movies">
-                    <h2>Movies</h2>
+          <div>
+            <ul id="movies__list"></ul>
+          </div>
+        </aside>
+      </main>
+    </div>
 
-                    <div>
-                        <ul id="movies_list"></ul>
-                    </div>
-                </aside>
-            </main>
-        </div>
-
-        <script src="./scripts/scripts.js"></script>
-    </body>
+    <script src="./scripts/scripts.js"></script>
+  </body>
 </html>
