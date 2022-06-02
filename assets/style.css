@@ -1,7 +1,7 @@
-@import url(./app.css);
-@import url(./header.css);
-@import url(./movie.css);
-@import url(./movies.css);
+@import url('./app.css');
+@import url('./header.css');
+@import url('./movie.css');
+@import url('./movies.css');
 
 * {
     margin: 0;
@@ -25,10 +25,6 @@
     --primary: #fff;
 
     --linear: linear-gradient(154.23deg, #0F3A7B -58.45%, #0CFFFF 374.49%);
-}
-
-body {
-    background: var(--background);
 }
 
 body, button, textarea, input {
