@@ -10,7 +10,76 @@
     font-weight: 700;
 }
 
+.movies div {
+    height: 640px;
+    padding-right: 44px;
+    overflow:auto;
+}
+
+.movies div::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+.movies div::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.4);
+}
+
+.movies div::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
 .movies ul {
-    width: 300px;
-    height:
+    display: flex;
+    flex-direction: column;
+}
+
+.movies li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    width: 265px;
+    height: 150px;
+    border-radius: 8px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    background-image:linear-gradient(180deg, rgba(14, 23, 47, 0.0001) 11.72%, #0E172F 100%), url('./item-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movies li:not(:first-child){
+    margin-top: 50px;
+}
+
+.movies li span {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.movies li strong {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.movies li button {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s;
+}
+
+.movies li:hover button {
+    opacity: 1;
+    transform: translateY(0);
 }
