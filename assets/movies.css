@@ -1,1 +1,16 @@
+.movies {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
 
+.movies h2 {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    font-weight: 700;
+}
+
+.movies ul {
+    width: 300px;
+    height:
+}
