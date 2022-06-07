@@ -11,21 +11,21 @@ function getUrlMovie(movieId) {
 function setMainMovie(movieId) {
   fetch(getUrlMovie(movieId)).then(response => response.json()).then(data => {
     const app = document.getElementById('app')
-  
+
     const title = document.querySelector('.movie h1')
     const description = document.querySelector('.movie p')
     const info = document.querySelector('.movie span')
     const rate = document.querySelector('.rate strong')
-  
+
     const yearRelease = data.release_date.split('-')[0]
-  
+
     title.innerHTML = data.title
     description.innerHTML = data.overview
     rate.innerHTML = data.vote_average
     info.innerHTML = yearRelease + ' - ' + data.genres[0].name + ' - Movie'
-  
+
     const image = BASE_URL_IMAGE.concat(data.backdrop_path)
-    app.style.backgroundImage = `linear-gradient(90.18deg, rgba(13, 22, 46, 0.7) 23.21%, rgba(13, 22, 46, 0.0001) 96.69%), url('${image}')`
+   // app.style.backgroundImage = `linear-gradient(90.18deg, rgba(13, 22, 46, 0.7) 23.21%, rgba(13, 22, 46, 0.0001) 96.69%), url('${image}')`
   })
 }
 
