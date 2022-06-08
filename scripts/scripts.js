@@ -12,9 +12,9 @@ function setMainMovie(movieId) {
   fetch(getUrlMovie(movieId)).then(response => response.json()).then(data => {
     const appImage = document.querySelector('.app_image img')
 
-    const title = document.querySelector('.movie h1')
-    const description = document.querySelector('.movie p')
-    const info = document.querySelector('.movie span')
+    const title = document.querySelector('.feature_movie h1')
+    const description = document.querySelector('.feature_movie p')
+    const info = document.querySelector('.feature_movie span')
     const rate = document.querySelector('.rate strong')
 
     const yearRelease = data.release_date.split('-')[0]
@@ -53,9 +53,9 @@ function createMovie(movieId) {
 }
 
 function loadListMovies() {
-  LIST_MOVIES.map(createMovie)
+  LIST_MOVIES.map(createMovie) 
 }
 
-loadListMovies()
+//loadListMovies()
 
 setMainMovie(LIST_MOVIES[0])
