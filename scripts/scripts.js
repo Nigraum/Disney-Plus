@@ -56,14 +56,15 @@ function createImageMovie(movieImage, movieTitle) {
 function createMovie(movieId) {
   fetch(getUrlMovie(movieId)).then(response => response.json()).then(data => {
     const movie = document.createElement('li')
+    movie.classList.add('movie')
     const genre = `<span>${data.genres[0].name}</span>`
     const title = `<strong>${data.title}</strong>`
     const image = BASE_URL_IMAGE.concat(data.backdrop_path)
 
     movie.innerHTML = genre + title
     movie.appendChild(createButtonMovie(movieId))
-    movie.appendChild(createImageMovie(movieId))
-    movie.style.backgroundImage = `linear-gradient(180deg, rgba(14, 23, 47, 0.0001) 11.72%, #0E172F 100%), url('${image}')`
+    movie.appendChild(createImageMovie(image, data.title))
+    
     moviesList.appendChild(movie)
   })
 }
@@ -72,6 +73,6 @@ function loadListMovies() {
   LIST_MOVIES.map(createMovie) 
 }
 
-//loadListMovies()
+loadListMovies()
 
 setMainMovie(LIST_MOVIES[0])
