@@ -38,6 +38,21 @@ function createButtonMovie(movieId) {
   return button
 }
 
+function createImageMovie(movieImage, movieTitle) {
+  const image = document.createElement('img')
+
+  const divImageMovie = document.createElement('div')
+  divImageMovie.classList.add('movie_image')
+
+  image.setAttribute('src', movieImage)
+  image.setAttribute('alt', `Film Image ${movieTitle}`)
+  image.setAttribute('loading', 'lazy')
+
+  divImageMovie.appendChild(image)
+
+  return divImageMovie
+}
+
 function createMovie(movieId) {
   fetch(getUrlMovie(movieId)).then(response => response.json()).then(data => {
     const movie = document.createElement('li')
@@ -47,6 +62,7 @@ function createMovie(movieId) {
 
     movie.innerHTML = genre + title
     movie.appendChild(createButtonMovie(movieId))
+    movie.appendChild(createImageMovie(movieId))
     movie.style.backgroundImage = `linear-gradient(180deg, rgba(14, 23, 47, 0.0001) 11.72%, #0E172F 100%), url('${image}')`
     moviesList.appendChild(movie)
   })
