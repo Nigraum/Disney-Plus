@@ -37,7 +37,7 @@
 .feature_movie button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: 500;
     margin-top: 20px;
     width: 250px;
@@ -45,7 +45,7 @@
     padding: 0 42px;
     border-radius: 70px;
     background: var(--linear);
-    box-shadow: 0px 3px 50px rgba(0, 0, 0, 0, 0.160784);
+    box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.160784);
     transition: filter 0.6s;
 }
 
