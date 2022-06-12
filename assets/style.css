@@ -2,6 +2,7 @@
 @import url('/assets/header.css');
 @import url('/assets/movie.css');
 @import url('/assets/movies.css');
+@import url('/assets/navigation.css');
 
 * {
     margin: 0;
