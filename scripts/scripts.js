@@ -11,6 +11,14 @@ function getUrlMovie(movieId) {
   return `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`
 }
 
+function changeButtonMenu() {
+  const button = document.querySelector('.button_menu')
+  const navigation = document.querySelector('.navigation')
+
+  button.classList.toggle('active')
+  navigation.classList.toogle('active')
+}
+
 function setMainMovie(movieId) {
   fetch(getUrlMovie(movieId)).then(response => response.json()).then(data => {
     const appImage = document.querySelector('.app_image img')
@@ -76,13 +84,6 @@ function loadListMovies() {
   LIST_MOVIES.map(createMovie) 
 }
 
-function changeButtonMenu() {
-  const button = document.querySelector('.button_menu')
-  const navigation = document.querySelector('.navigation')
-
-  button.classList.toggle('active')
-  navigation.classList.toogle('active')
-}
 
 loadListMovies()
 
