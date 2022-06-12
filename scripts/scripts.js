@@ -5,7 +5,7 @@ const BASE_URL_IMAGE = {
 }
 const LIST_MOVIES = ['tt5613484', 'tt4846232', 'tt1032755', 'tt0113540', 'tt0355702', 'tt0117951', 'tt5727208', 'tt2210479', 'tt2358913', 'tt2358911']
 
-const moviesList = document.getElementById('movies__list')
+const moviesList = document.getElementById('movies')
 
 function getUrlMovie(movieId) {
   return `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`

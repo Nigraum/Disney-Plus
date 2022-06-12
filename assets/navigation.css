@@ -1,18 +1,23 @@
-.navigation {
+.navigation { 
   position: fixed;
   top: 0;
-  right: -600;
-  width: 600px;
+  right: -660px;
+  width: 660px;
   height: 100%;
-  transition: 0.6s;
+  padding-top: 66px;
+  padding-left: 54px;
+  padding-right: 80px;
+  background: #093f7a;
+  transition: all 0.6s;
 }
 
 .navigation.active {
-  transform: translate(-600px);
+  transform: translate(-660px);
 }
 
-.movies h2 {
+.navigation h2 {
   font-size: 1.75rem;
   line-height: 2.125rem;
   font-weight: 700;
 }
+
