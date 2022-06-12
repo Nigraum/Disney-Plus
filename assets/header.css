@@ -25,3 +25,7 @@ header {
 .button_menu span:last-child {
     width: 45%;
 }
+
+.button_menu.active span:last-child {
+    width: 100%;
+}
