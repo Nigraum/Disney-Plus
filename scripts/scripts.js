@@ -16,7 +16,8 @@ function changeButtonMenu() {
   const navigation = document.querySelector('.navigation')
 
   button.classList.toggle('active')
-  navigation.classList.toogle('active')
+  navigation.classList.toggle('active')
+
 }
 
 function setMainMovie(movieId) {
@@ -38,6 +39,7 @@ function setMainMovie(movieId) {
     const image = BASE_URL_IMAGE.original.concat(data.backdrop_path)
     appImage.setAttribute('src', image)
    
+    changeButtonMenu()
   })
 }
 
