@@ -30,11 +30,11 @@ header {
 
 .button_menu.active span:last-child {
     width: 100%;
-    transform: rotate(45deg);
+    transform: rotate(45deg) translateY(-17px);
 }
 
 .button_menu.active span:nth-child(1) {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateY(18px);
 }
 
 .button_menu.active span:nth-child(2) {
