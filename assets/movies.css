@@ -4,12 +4,6 @@
     row-gap: 24px;
 }
 
-.movies h2 {
-    font-size: 1.75rem;
-    line-height: 2.125rem;
-    font-weight: 700;
-}
-
 .movies > div {
     height: 640px;
     padding-right: 44px;

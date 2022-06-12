@@ -1,0 +1,18 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  right: -600;
+  width: 600px;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.navigation.active {
+  transform: translate(-600px);
+}
+
+.movies h2 {
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  font-weight: 700;
+}

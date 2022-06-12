@@ -78,8 +78,10 @@ function loadListMovies() {
 
 function changeButtonMenu() {
   const button = document.querySelector('.button_menu')
+  const navigation = document.querySelector('.navigation')
 
   button.classList.toggle('active')
+  navigation.classList.toogle('active')
 }
 
 loadListMovies()

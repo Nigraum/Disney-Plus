@@ -12,6 +12,7 @@ header {
     row-gap: 10px;
     width: 46px;
     background: transparent;
+    z-index: 2;
 }
 
 .button_menu span {
