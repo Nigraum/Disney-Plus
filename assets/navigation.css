@@ -10,6 +10,20 @@
   overflow: auto;
 }
 
+.navigation::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+.navigation::-webkit-scrollbar-tracker {
+  background: transparent;
+  border-radius: 0.25rem;
+}
+
+.navigation::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 0.375rem;
+}
+
 .navigation.active {
   transform: translate(-660px);
 }
@@ -42,3 +56,5 @@
     padding: 44px 24px 24px;
   }
 }
+
+
