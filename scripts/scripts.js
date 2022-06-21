@@ -30,7 +30,7 @@ function setMainMovie(movie) {
     title.innerHTML = movie.title
     description.innerHTML = movie.overview
     rate.innerHTML = movie.vote_average
-    info.innerHTML = movie.yearRelease + ' - ' + movie.genre + ' - Movie'
+    info.innerHTML = movie.release + ' - ' + movie.genre + ' - Movie'
 
     appImage.setAttribute('src', movie.image.original)
    
