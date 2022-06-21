@@ -3,9 +3,10 @@
  </h1> 
  
  ## Link 
- https://nigraum-disneyplus.netlify.app/
+ https://nigraum-disneyplus.netlify.app/![Disney+]
 
-![image](https://user-images.githubusercontent.com/102248990/171677170-7988c880-98c8-46d0-bcb4-540270cc7f10.png)
+
+![image](https://user-images.githubusercontent.com/102248990/174912497-9d486521-989a-45ed-aa3f-3a5ccaefb247.png)
 
 
 ## 💻 Projeto
