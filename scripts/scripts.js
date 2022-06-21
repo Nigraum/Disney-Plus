@@ -4,6 +4,7 @@ const BASE_URL_IMAGE = {
   small: 'https://image.tmdb.org/t/p/w500/'
 }
 const movies = []
+let movieActive = 'tt5613484'
 const moviesElement = document.getElementById('movies')
 
 function getUrlMovie(movieId) {
@@ -37,6 +38,14 @@ function setMainMovie(movie) {
 }
 
 function changeMainMovie(movieId) {
+  const movieLi = document.getElementById(movieId)
+  movieLi.classList.add('test-class')
+
+  const movieCurrent = document.getElementById(movieActive)
+  movieCurrent.classList.remove('test-class')
+
+  movieActive = movieId
+
   const movie = movies.find(movie =>movie.id === movieId)
 
   setMainMovie(movie)
@@ -69,6 +78,8 @@ function createImageMovie(movieImage, movieTitle) {
 function addMovieInList(movie) {
   const movieElement = document.createElement('li')
   movieElement.classList.add('movie')
+
+  movieElement.setAttribute('id', movie.id)
 
   const genre = `<span>${movie.genre}</span>`
   const title = `<strong>${movie.title}</strong>`
