@@ -1,22 +1,3 @@
-/*.movies > div {
-    height: 640px;
-    padding-right: 44px;
-    overflow:auto;
-}
-
-.movies > div::-webkit-scrollbar {
-  width: 0.2rem;
-}
-
-.movies > div::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.4);
-}
-
-.movies > div::-webkit-scrollbar-thumb {
-  background: var(--primary);
-} */
-
-
 #movies {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -93,4 +74,14 @@
 
 .movie.active-movie button {
     display: none;
+}
+
+@media(max-width: 650px) {
+    #movies {
+        grid-template-columns: 1fr;
+    }
+
+    .movie {
+        width: 100%;
+    }
 }
