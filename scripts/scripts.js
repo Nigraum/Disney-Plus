@@ -37,14 +37,18 @@ function setMainMovie(movie) {
    
 }
 
+function changeMovieActiveInList(newMovieActive) {
+  const movieActiveCurrent = document.getElementById(movieActive)
+  movieActiveCurrent.classList.remove('active-movie')
+
+  const movieActiveNew = document.getElementById(newMovieActive)
+  movieActiveNew.classList.remove('active-movie')
+
+  movieActive = newMovieActive
+}
+
 function changeMainMovie(movieId) {
-  const movieLi = document.getElementById(movieId)
-  movieLi.classList.add('test-class')
-
-  const movieCurrent = document.getElementById(movieActive)
-  movieCurrent.classList.remove('test-class')
-
-  movieActive = movieId
+  changeMovieActiveInList(movieId)
 
   const movie = movies.find(movie =>movie.id === movieId)
 
