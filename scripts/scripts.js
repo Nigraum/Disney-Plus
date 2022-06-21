@@ -4,7 +4,7 @@ const BASE_URL_IMAGE = {
   small: 'https://image.tmdb.org/t/p/w500/'
 }
 const movies = []
-let movieActive = 'tt5613484'
+let movieActive = ''
 const moviesElement = document.getElementById('movies')
 
 function getUrlMovie(movieId) {
@@ -42,7 +42,7 @@ function changeMovieActiveInList(newMovieActive) {
   movieActiveCurrent.classList.remove('active-movie')
 
   const movieActiveNew = document.getElementById(newMovieActive)
-  movieActiveNew.classList.remove('active-movie')
+  movieActiveNew.classList.add('active-movie')
 
   movieActive = newMovieActive
 }
@@ -116,11 +116,16 @@ function loadMovies() {
 
       movies.push(movieData)
 
+      addMovieInList(movieData)
+
       if (index === 0) {
         setMainMovie(movieData)
-      }
+        movieActive = movieData.id
 
-      addMovieInList(movieData)
+        const movieActiveNew = document.getElementById(movieActive)
+        movieActiveNew.classList.add('active-movie')
+
+      }
     })
   })
 }
